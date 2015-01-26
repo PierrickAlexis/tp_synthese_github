@@ -11,7 +11,7 @@ git config [--global] user.email "mail@mail.com"
 
 git commit -m "Message a mettre pour savoir pourquoi on a mit le fichier"
 
-git remote add origin lienDonnéParGitHub // le lien en bas a droite (lien en https)
+git remote add origin https://github.com/AlexisWidmer/tp_Si6.git // le lien en bas a droite (lien en https)
 
 git push origin master
 AlexisWidmer
@@ -19,5 +19,22 @@ MDP
 
 
 
-Pour faire un clonage avec Git :
+Pour faire un clonage avec Git d'un projet vide :
 
+Dans le dossier :
+
+git clone https://github.com/AlexisWidmer/tp_synthese_github.git
+
+git add nomFichierAIndexer
+git status // Pour voir les fichiers indexés et ceux qui ne le sont pas
+
+si jamais fait : git config [--global] user.name "Nom" // --global seulement pour les PC persos
+git config [--global] user.email "mail@mail.com"
+
+git commit -m "Message a mettre pour savoir pourquoi on a mit le fichier"
+
+git remote add origin https://github.com/AlexisWidmer/tp_Si6.git // le lien en bas a droite (lien en https)
+
+git push origin master
+AlexisWidmer 
+MDP
