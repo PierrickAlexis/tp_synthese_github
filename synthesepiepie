@@ -1,40 +1,37 @@
-Pour faire une initialisation avec Git :
+------
+GitHub
+------
+------
+||
+Situation A 
+||>
+Projet existant à suivre et à hébergé chez GitHub
 
-Dans un dossier que l'on veut suivre :
+Déclaration d’un dossier comme étant un dépôt Git :
+git init 
 
-git init
-git add nomFichierAIndexer
-git status // Pour voir les fichiers indexés et ceux qui ne le sont pas
+Permet d’ajouter le fichier “fichier” :
+git add fichier
 
-si jamais fait : git config [--global] user.name "Nom" // --global seulement pour les PC persos
-git config [--global] user.email "mail@mail.com"
+Validation avec un message explicatif :
+git commit -m “Première validation”
 
-git commit -m "Message a mettre pour savoir pourquoi on a mit le fichier"
+Envoi tous les commits de la branche local vers GitHub :
+git push
+------
+||
+Situation B
+||>
+Travailler sur un projet déjà hébergé chez GitHub
 
-git remote add origin https://github.com/AlexisWidmer/tp_Si6.git // le lien en bas a droite (lien en https)
+Copier le repository existant sur GitHub dans son dossier local.
+git clone https://github.com/LENOMDUREPOSITORY/
 
-git push origin master
-AlexisWidmer
-MDP
+------
+Situation C
+------
+||>
+Nouveau projet sur GitHub, puis en local
 
 
-
-Pour faire un clonage avec Git d'un projet vide :
-
-Dans le dossier :
-
-git clone https://github.com/AlexisWidmer/tp_synthese_github.git
-
-git add nomFichierAIndexer
-git status // Pour voir les fichiers indexés et ceux qui ne le sont pas
-
-si jamais fait : git config [--global] user.name "Nom" // --global seulement pour les PC persos
-git config [--global] user.email "mail@mail.com"
-
-git commit -m "Message a mettre pour savoir pourquoi on a mit le fichier"
-
-git remote add origin https://github.com/AlexisWidmer/tp_Si6.git // le lien en bas a droite (lien en https)
-
-git push origin master
-AlexisWidmer 
-MDP
+------
