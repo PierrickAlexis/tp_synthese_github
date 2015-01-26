@@ -1,4 +1,5 @@
 ------
+------
 GitHub
 ------
 ------
@@ -10,14 +11,16 @@ Projet existant à suivre et à hébergé chez GitHub
 Déclaration d’un dossier comme étant un dépôt Git :
 git init 
 
-Permet d’ajouter le fichier “fichier” :
-git add fichier
+Permet d’ajouter le fichier “fichier” en index :
+git add nomFichier
 
 Validation avec un message explicatif :
 git commit -m “Première validation”
 
 Envoi tous les commits de la branche local vers GitHub :
-git push
+git push origin master
+Login
+Password
 ------
 ||
 Situation B
@@ -25,13 +28,34 @@ Situation B
 Travailler sur un projet déjà hébergé chez GitHub
 
 Copier le repository existant sur GitHub dans son dossier local.
-git clone https://github.com/LENOMDUREPOSITORY/
+git clone https://github.com/leNomDuRepository/
 
+Ajouter le fichier “fichier” en index après modification :
+git add nomFichier
+
+Validation avec un message explicatif :
+git commit -m “Première validation”
+
+Envoi tous les commits de la branche local vers GitHub :
+git push origin master
+Login 
+Password
 ------
 Situation C
-------
 ||>
 Nouveau projet sur GitHub, puis en local
 
+Copier le repository existant sur GitHub dans son dossier local (sans fichier).
+git clone https://github.com/leNomDuRepository/
 
+Créer un fichier qu'on va indexer par la suite :
+git add nomFichier
+
+Validation avec un message explicatif :
+git commit -m “Première validation”
+
+Envoi tous les commits de la branche local vers GitHub :
+git push origin master
+Login
+Password
 ------
